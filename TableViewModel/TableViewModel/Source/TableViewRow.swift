@@ -11,9 +11,9 @@
 
 import UIKit
 
-typealias TableViewRowSelectAction = (IndexPath) -> ()
+public typealias TableViewRowSelectAction = (IndexPath) -> ()
 
-protocol TableViewRow {
+public protocol TableViewRow {
 	var rowIdentifier: String { get }
 	func configure(cell: UITableViewCell)
 	
@@ -26,7 +26,7 @@ protocol TableViewRow {
 	var estimatedHeight: CGFloat { get }
 }
 
-extension TableViewRow {
+public extension TableViewRow {
 	func configure(cell: UITableViewCell) {}
 	
 	var rowActions: [UITableViewRowAction]? {

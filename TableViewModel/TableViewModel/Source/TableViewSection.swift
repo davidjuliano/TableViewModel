@@ -10,7 +10,7 @@
 
 import UIKit
 
-struct TableViewSection {
+public struct TableViewSection {
 	var rows: [TableViewRow] = []
 	var headerTitle: String? = .none
 	var footerTitle: String? = .none
@@ -22,7 +22,7 @@ struct TableViewSection {
 	}
 }
 
-extension TableViewSection {
+public extension TableViewSection {
 	subscript(idx: Int) -> TableViewRow {
 		get { return rows[idx] }
 		set { rows[idx] = newValue }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TableViewSelection {
+public struct TableViewSelection {
 	fileprivate(set) var indexPaths: Set<IndexPath> = Set()
 	
 	func isItemSelectedAt(indexPath: IndexPath) -> Bool {

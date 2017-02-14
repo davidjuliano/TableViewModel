@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol TableViewModelType {
+public protocol TableViewModelType {
 	var tableView: UITableView! { get }
 	var sections: [TableViewSection] { get set }
 	var onSelect: TableViewRowSelectAction? { get set }
 	var onDeselect: TableViewRowSelectAction? { get set }
 }
 
-extension TableViewModelType {
+public extension TableViewModelType {
 	subscript(idx: Int) -> TableViewSection {
 		get { return sections[idx] }
 		set { sections[idx] = newValue }
