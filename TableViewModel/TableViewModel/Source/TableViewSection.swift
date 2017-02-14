@@ -10,7 +10,7 @@
 
 import UIKit
 
-public struct TableViewSection {
+open struct TableViewSection {
 	var rows: [TableViewRow] = []
 	var headerTitle: String? = .none
 	var footerTitle: String? = .none

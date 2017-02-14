@@ -3,7 +3,7 @@
 
 import UIKit
 
-public class TableViewModel: NSObject, TableViewModelType {
+open class TableViewModel: NSObject, TableViewModelType {
 	@IBOutlet public var tableView: UITableView!
 	public var sections: [TableViewSection] = []
 	public var onSelect: TableViewRowSelectAction? = .none
